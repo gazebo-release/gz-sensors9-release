@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/logical_camera/*
+usr/include/*/sensors*/*/sensors/LogicalCamera*.hh
+usr/lib/*/cmake/*-sensors[0-99]-logical_camera/*
+usr/lib/*/lib*-sensors[0-99]-logical_camera.so
+usr/lib/*/pkgconfig/*-sensors[0-99]-logical_camera.pc
