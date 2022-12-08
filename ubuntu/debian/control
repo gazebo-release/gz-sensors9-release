@@ -1,4 +1,4 @@
-Source: gz-sensors7
+Source: gz-sensors8
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
@@ -11,32 +11,32 @@ Build-Depends: cmake,
                libgz-common5-profiler-dev,
                libgz-math7-dev,
                libgz-msgs9-dev,
-               libgz-rendering7-ogre1-dev,
-               libgz-rendering7-ogre2-dev,
+               libgz-rendering8-ogre1-dev,
+               libgz-rendering8-ogre2-dev,
                libgz-transport12-core-dev,
                libgz-tools2-dev,
                libsdformat13-dev
 Vcs-Browser: https://github.com/gazebosim/gz-sensors
-Vcs-Git: https://github.com/gazebo-release/gz-sensors7-release
+Vcs-Git: https://github.com/gazebo-release/gz-sensors8-release
 Standards-Version: 4.5.1
 Homepage: http://gazebosim.org/
 
-Package: libgz-sensors7-core-dev
+Package: libgz-sensors8-core-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
          libgz-msgs9-dev,
-         libgz-rendering7-ogre1-dev,
-         libgz-rendering7-ogre2-dev,
+         libgz-rendering8-ogre1-dev,
+         libgz-rendering8-ogre2-dev,
          libgz-transport12-core-dev,
          libgz-tools2-dev,
          libsdformat13-dev,
-         libgz-sensors7 (= ${binary:Version}),
+         libgz-sensors8 (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-core-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-core-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-core-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-core-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Development files
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -44,13 +44,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Development f
  .
  Core development files
 
-Package: libgz-sensors7
+Package: libgz-sensors8
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7 (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7 (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8 (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8 (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Shared library
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -58,17 +58,17 @@ Description: Gazebo Sensors classes and functions for robot apps - Shared librar
  .
  Main shared library
 
-Package: libgz-sensors7-air-pressure-dev
+Package: libgz-sensors8-air-pressure-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-air-pressure (= ${binary:Version}),
+         libgz-sensors8-air-pressure (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-air-pressure-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-air-pressure-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-air-pressure-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-air-pressure-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files air-pressure
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -76,13 +76,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files air
  .
  Development files for air-pressure sensor
 
-Package: libgz-sensors7-air-pressure
+Package: libgz-sensors8-air-pressure
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-air-pressure (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-air-pressure (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-air-pressure (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-air-pressure (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib air-pressure
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -90,17 +90,17 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib air-press
  .
  Shared library for air-pressure sensor
 
-Package: libgz-sensors7-altimeter-dev
+Package: libgz-sensors8-altimeter-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-altimeter (= ${binary:Version}),
+         libgz-sensors8-altimeter (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-altimeter-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-altimeter-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-altimeter-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-altimeter-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files altimeter
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -108,13 +108,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files alt
  .
  Development files for altimeter sensor
 
-Package: libgz-sensors7-altimeter
+Package: libgz-sensors8-altimeter
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-altimeter (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-altimeter (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-altimeter (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-altimeter (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib altimeter
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -122,7 +122,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib altimeter
  .
  Shared library for altimeter sensor
 
-Package: libgz-sensors7-boundingbox-camera-dev
+Package: libgz-sensors8-boundingbox-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -130,9 +130,9 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs9-dev,
          libgz-transport12-core-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-boundingbox-camera (= ${binary:Version}),
+         libgz-sensors8-boundingbox-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files Bounding Box Camera
@@ -141,7 +141,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files Bou
  .
  Development files for Bounding Box Camera sensor
 
-Package: libgz-sensors7-boundingbox-camera
+Package: libgz-sensors8-boundingbox-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -153,7 +153,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib Bounding 
  .
  Shared library for Bounding Box Camera sensor
 
-Package: libgz-sensors7-camera-dev
+Package: libgz-sensors8-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -161,12 +161,12 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs9-dev,
          libgz-transport12-core-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-camera (= ${binary:Version}),
+         libgz-sensors8-camera (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files Camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -174,13 +174,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files Cam
  .
  Development files for Camera sensor
 
-Package: libgz-sensors7-camera
+Package: libgz-sensors8-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib Camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -188,7 +188,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib Camera
  .
  Shared library for Camera sensor
 
-Package: libgz-sensors7-depth-camera-dev
+Package: libgz-sensors8-depth-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -196,13 +196,13 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs9-dev,
          libgz-transport12-core-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
-         libgz-sensors7-camera-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors8-camera-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-depth-camera (= ${binary:Version}),
+         libgz-sensors8-depth-camera (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-depth-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-depth-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-depth-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-depth-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files depth-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -210,13 +210,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files dep
  .
  Development files for depth-camera sensor
 
-Package: libgz-sensors7-depth-camera
+Package: libgz-sensors8-depth-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-depth-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-depth-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-depth-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-depth-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib depth-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -224,18 +224,18 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib depth-cam
  .
  Shared library for depth-camera sensor
 
-Package: libgz-sensors7-force-torque-dev
+Package: libgz-sensors8-force-torque-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-force-torque (= ${binary:Version}),
+         libgz-sensors8-force-torque (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-force-torque-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-force-torque-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-force-torque-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-force-torque-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files force-torque
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -243,13 +243,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files for
  .
  Development files for force-torque sensor
 
-Package: libgz-sensors7-force-torque
+Package: libgz-sensors8-force-torque
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-force-torque (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-force-torque (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-force-torque (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-force-torque (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib force-torque
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -257,18 +257,18 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib force-tor
  .
  Shared library for force-torque sensor
 
-Package: libgz-sensors7-imu-dev
+Package: libgz-sensors8-imu-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-imu (= ${binary:Version}),
+         libgz-sensors8-imu (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-imu-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-imu-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-imu-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-imu-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files imu
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -276,13 +276,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files imu
  .
  Development files for imu sensor
 
-Package: libgz-sensors7-imu
+Package: libgz-sensors8-imu
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-imu (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-imu (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-imu (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-imu (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib imu
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -290,7 +290,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib imu
  .
  Shared library for imu sensor
 
-Package: libgz-sensors7-lidar-dev
+Package: libgz-sensors8-lidar-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -298,12 +298,12 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs9-dev,
          libgz-transport12-core-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-lidar (= ${binary:Version}),
+         libgz-sensors8-lidar (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-lidar-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-lidar-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-lidar-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-lidar-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files lidar
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -311,13 +311,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files lid
  .
  Development files for lidar sensor
 
-Package: libgz-sensors7-lidar
+Package: libgz-sensors8-lidar
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-lidar (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-lidar (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-lidar (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-lidar (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib lidar
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -325,7 +325,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib lidar
  .
  Shared library for lidar sensor
 
-Package: libgz-sensors7-gpu-lidar-dev
+Package: libgz-sensors8-gpu-lidar-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -333,13 +333,13 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs9-dev,
          libgz-transport12-core-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
-         libgz-sensors7-lidar-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors8-lidar-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-gpu-lidar (= ${binary:Version}),
+         libgz-sensors8-gpu-lidar (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-gpu-lidar-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-gpu-lidar-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-gpu-lidar-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-gpu-lidar-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files gpu-lidar
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -347,13 +347,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files gpu
  .
  Development files for gpu-lidar sensor
 
-Package: libgz-sensors7-gpu-lidar
+Package: libgz-sensors8-gpu-lidar
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-gpu-lidar (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-gpu-lidar (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-gpu-lidar (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-gpu-lidar (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib gpu-lidar
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -361,7 +361,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib gpu-lidar
  .
  Shared library for gpu-lidar sensor
 
-Package: libgz-sensors7-logical-camera-dev
+Package: libgz-sensors8-logical-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -369,12 +369,12 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs9-dev,
          libgz-transport12-core-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-logical-camera (= ${binary:Version}),
+         libgz-sensors8-logical-camera (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-logical-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-logical-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-logical-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-logical-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files logical-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -382,13 +382,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files log
  .
  Development files for logical-camera sensor
 
-Package: libgz-sensors7-logical-camera
+Package: libgz-sensors8-logical-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-logical-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-logical-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-logical-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-logical-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib logical-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -396,18 +396,18 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib logical-c
  .
  Shared library for logical-camera sensor
 
-Package: libgz-sensors7-magnetometer-dev
+Package: libgz-sensors8-magnetometer-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-magnetometer (= ${binary:Version}),
+         libgz-sensors8-magnetometer (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-magnetometer-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-magnetometer-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-magnetometer-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-magnetometer-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files magnetometer
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -415,13 +415,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files mag
  .
  Development files for magnetometer sensor
 
-Package: libgz-sensors7-magnetometer
+Package: libgz-sensors8-magnetometer
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-magnetometer (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-magnetometer (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-magnetometer (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-magnetometer (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib magnetometer
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -429,18 +429,18 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib magnetome
  .
  Shared library for magnetometer sensor
 
-Package: libgz-sensors7-navsat-dev
+Package: libgz-sensors8-navsat-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-navsat (= ${binary:Version}),
+         libgz-sensors8-navsat (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-navsat-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-navsat-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-navsat-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-navsat-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files navsat
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -448,13 +448,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files nav
  .
  Development files for NavSat (GPS) sensor
 
-Package: libgz-sensors7-navsat
+Package: libgz-sensors8-navsat
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-navsat (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-navsat (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-navsat (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-navsat (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib navsat
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -462,18 +462,18 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib navsat
  .
  Shared library for NavSat (GPS) sensor
 
-Package: libgz-sensors7-rendering-dev
+Package: libgz-sensors8-rendering-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-rendering (= ${binary:Version}),
+         libgz-sensors8-rendering (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-rendering-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-rendering-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-rendering-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-rendering-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files rendering
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -481,13 +481,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files ren
  .
  Development files for rendering sensor
 
-Package: libgz-sensors7-rendering
+Package: libgz-sensors8-rendering
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-rendering (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-rendering (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-rendering (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-rendering (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib rendering
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -495,17 +495,17 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib rendering
  .
  Shared library for rendering sensor
 
-Package: libgz-sensors7-rgbd-camera-dev
+Package: libgz-sensors8-rgbd-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-msgs9-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-rgbd-camera (= ${binary:Version}),
+         libgz-sensors8-rgbd-camera (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-rgbd-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-rgbd-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-rgbd-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-rgbd-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files rgbd-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -513,13 +513,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files rgb
  .
  Development files for rgbd-camera sensor
 
-Package: libgz-sensors7-rgbd-camera
+Package: libgz-sensors8-rgbd-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-rgbd (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-rgbd (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-rgbd (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-rgbd (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib rgbd-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -527,7 +527,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib rgbd-came
  .
  Shared library for rgbd-camera sensor
 
-Package: libgz-sensors7-segmentation-camera-dev
+Package: libgz-sensors8-segmentation-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -535,12 +535,12 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs9-dev,
          libgz-transport12-core-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-segmentation-camera (= ${binary:Version}),
+         libgz-sensors8-segmentation-camera (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-segmentation-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-segmentation-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-segmentation-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-segmentation-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files segmentation-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -548,13 +548,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files seg
  .
  Development files for segmentation-camera sensor
 
-Package: libgz-sensors7-segmentation-camera
+Package: libgz-sensors8-segmentation-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-segmentation-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-segmentation-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-segmentation-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-segmentation-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib segmentation-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -562,7 +562,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib segmentat
  .
  Shared library for segmentation-camera sensor
 
-Package: libgz-sensors7-thermal-camera-dev
+Package: libgz-sensors8-thermal-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -570,12 +570,12 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs9-dev,
          libgz-transport12-core-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-thermal-camera (= ${binary:Version}),
+         libgz-sensors8-thermal-camera (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-thermal-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-thermal-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-thermal-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-thermal-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files thermal-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -583,13 +583,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files the
  .
  Development files for thermal-camera sensor
 
-Package: libgz-sensors7-thermal-camera
+Package: libgz-sensors8-thermal-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-thermal-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-thermal-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-thermal-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-thermal-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib thermal-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -597,17 +597,17 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib thermal-c
  .
  Shared library for thermal-camera sensor
 
-Package: libgz-sensors7-wide-angle-camera-dev
+Package: libgz-sensors8-wide-angle-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-msgs9-dev,
-         libgz-sensors7-core-dev (= ${binary:Version}),
+         libgz-sensors8-core-dev (= ${binary:Version}),
          libsdformat13-dev,
-         libgz-sensors7-wide-angle-camera (= ${binary:Version}),
+         libgz-sensors8-wide-angle-camera (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-wide-angle-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-wide-angle-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-wide-angle-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-wide-angle-camera-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files wide-angle-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -615,13 +615,13 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files wid
  .
  Development files for wide-angle-camera sensor
 
-Package: libgz-sensors7-wide-angle-camera
+Package: libgz-sensors8-wide-angle-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-sensors7-wide-angle-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-wide-angle-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-wide-angle-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-wide-angle-camera (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Lib wide-angle-camera
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -630,30 +630,30 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib wide-angl
  Shared library for wide-angle-camera sensor
 
 
-Package: libgz-sensors7-dev
+Package: libgz-sensors8-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-sensors7-core-dev (= ${binary:Version}),
-         libgz-sensors7-air-pressure-dev (= ${binary:Version}),
-         libgz-sensors7-altimeter-dev (= ${binary:Version}),
-         libgz-sensors7-boundingbox-camera-dev (= ${binary:Version}),
-         libgz-sensors7-camera-dev (= ${binary:Version}),
-         libgz-sensors7-depth-camera-dev (= ${binary:Version}),
-         libgz-sensors7-force-torque-dev (= ${binary:Version}),
-         libgz-sensors7-imu-dev (= ${binary:Version}),
-         libgz-sensors7-lidar-dev (= ${binary:Version}),
-         libgz-sensors7-gpu-lidar-dev (= ${binary:Version}),
-         libgz-sensors7-logical-camera-dev (= ${binary:Version}),
-         libgz-sensors7-magnetometer-dev (= ${binary:Version}),
-         libgz-sensors7-navsat-dev (= ${binary:Version}),
-         libgz-sensors7-rendering-dev (= ${binary:Version}),
-         libgz-sensors7-rgbd-camera-dev (= ${binary:Version}),
-         libgz-sensors7-segmentation-camera-dev (= ${binary:Version}),
-         libgz-sensors7-thermal-camera-dev (= ${binary:Version}),
-         libgz-sensors7-wide-angle-camera-dev (= ${binary:Version}),
+Depends: libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors8-air-pressure-dev (= ${binary:Version}),
+         libgz-sensors8-altimeter-dev (= ${binary:Version}),
+         libgz-sensors8-boundingbox-camera-dev (= ${binary:Version}),
+         libgz-sensors8-camera-dev (= ${binary:Version}),
+         libgz-sensors8-depth-camera-dev (= ${binary:Version}),
+         libgz-sensors8-force-torque-dev (= ${binary:Version}),
+         libgz-sensors8-imu-dev (= ${binary:Version}),
+         libgz-sensors8-lidar-dev (= ${binary:Version}),
+         libgz-sensors8-gpu-lidar-dev (= ${binary:Version}),
+         libgz-sensors8-logical-camera-dev (= ${binary:Version}),
+         libgz-sensors8-magnetometer-dev (= ${binary:Version}),
+         libgz-sensors8-navsat-dev (= ${binary:Version}),
+         libgz-sensors8-rendering-dev (= ${binary:Version}),
+         libgz-sensors8-rgbd-camera-dev (= ${binary:Version}),
+         libgz-sensors8-segmentation-camera-dev (= ${binary:Version}),
+         libgz-sensors8-thermal-camera-dev (= ${binary:Version}),
+         libgz-sensors8-wide-angle-camera-dev (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-sensors7-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
-Replaces: libignition-sensors7-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Breaks: libignition-sensors8-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
+Replaces: libignition-sensors8-dev (<< 6.999.999+nightly+git20220630+4r075123ddb19107a461c0777d69a323d9012b7bb9-4)
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Metapackage
  Gazebo Sensors is a component in the Gazebo framework, a set of libraries
@@ -661,296 +661,296 @@ Description: Gazebo Sensors classes and functions for robot apps - Metapackage
  .
  Metapackage for all the -dev files
 
-Package: libignition-sensors7-core-dev
-Depends: libgz-sensors7-core-dev, ${misc:Depends}
+Package: libignition-sensors8-core-dev
+Depends: libgz-sensors8-core-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7
-Depends: libgz-sensors7, ${misc:Depends}
+Package: libignition-sensors8
+Depends: libgz-sensors8, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-air-pressure-dev
-Depends: libgz-sensors7-air-pressure-dev, ${misc:Depends}
+Package: libignition-sensors8-air-pressure-dev
+Depends: libgz-sensors8-air-pressure-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-air-pressure
-Depends: libgz-sensors7-air-pressure, ${misc:Depends}
+Package: libignition-sensors8-air-pressure
+Depends: libgz-sensors8-air-pressure, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-altimeter-dev
-Depends: libgz-sensors7-altimeter-dev, ${misc:Depends}
+Package: libignition-sensors8-altimeter-dev
+Depends: libgz-sensors8-altimeter-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-altimeter
-Depends: libgz-sensors7-altimeter, ${misc:Depends}
+Package: libignition-sensors8-altimeter
+Depends: libgz-sensors8-altimeter, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-boundingbox-camera-dev
-Depends: libgz-sensors7-boundingbox-camera-dev, ${misc:Depends}
+Package: libignition-sensors8-boundingbox-camera-dev
+Depends: libgz-sensors8-boundingbox-camera-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-boundingbox-camera
-Depends: libgz-sensors7-boundingbox-camera, ${misc:Depends}
+Package: libignition-sensors8-boundingbox-camera
+Depends: libgz-sensors8-boundingbox-camera, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-camera-dev
-Depends: libgz-sensors7-camera-dev, ${misc:Depends}
+Package: libignition-sensors8-camera-dev
+Depends: libgz-sensors8-camera-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-camera
-Depends: libgz-sensors7-camera, ${misc:Depends}
+Package: libignition-sensors8-camera
+Depends: libgz-sensors8-camera, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-depth-camera-dev
-Depends: libgz-sensors7-depth-camera-dev, ${misc:Depends}
+Package: libignition-sensors8-depth-camera-dev
+Depends: libgz-sensors8-depth-camera-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-depth-camera
-Depends: libgz-sensors7-depth-camera, ${misc:Depends}
+Package: libignition-sensors8-depth-camera
+Depends: libgz-sensors8-depth-camera, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-force-torque-dev
-Depends: libgz-sensors7-force-torque-dev, ${misc:Depends}
+Package: libignition-sensors8-force-torque-dev
+Depends: libgz-sensors8-force-torque-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-force-torque
-Depends: libgz-sensors7-force-torque, ${misc:Depends}
+Package: libignition-sensors8-force-torque
+Depends: libgz-sensors8-force-torque, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-imu-dev
-Depends: libgz-sensors7-imu-dev, ${misc:Depends}
+Package: libignition-sensors8-imu-dev
+Depends: libgz-sensors8-imu-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-imu
-Depends: libgz-sensors7-imu, ${misc:Depends}
+Package: libignition-sensors8-imu
+Depends: libgz-sensors8-imu, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-lidar-dev
-Depends: libgz-sensors7-lidar-dev, ${misc:Depends}
+Package: libignition-sensors8-lidar-dev
+Depends: libgz-sensors8-lidar-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-lidar
-Depends: libgz-sensors7-lidar, ${misc:Depends}
+Package: libignition-sensors8-lidar
+Depends: libgz-sensors8-lidar, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-gpu-lidar-dev
-Depends: libgz-sensors7-gpu-lidar-dev, ${misc:Depends}
+Package: libignition-sensors8-gpu-lidar-dev
+Depends: libgz-sensors8-gpu-lidar-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-gpu-lidar
-Depends: libgz-sensors7-gpu-lidar, ${misc:Depends}
+Package: libignition-sensors8-gpu-lidar
+Depends: libgz-sensors8-gpu-lidar, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-logical-camera-dev
-Depends: libgz-sensors7-logical-camera-dev, ${misc:Depends}
+Package: libignition-sensors8-logical-camera-dev
+Depends: libgz-sensors8-logical-camera-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-logical-camera
-Depends: libgz-sensors7-logical-camera, ${misc:Depends}
+Package: libignition-sensors8-logical-camera
+Depends: libgz-sensors8-logical-camera, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-magnetometer-dev
-Depends: libgz-sensors7-magnetometer-dev, ${misc:Depends}
+Package: libignition-sensors8-magnetometer-dev
+Depends: libgz-sensors8-magnetometer-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-magnetometer
-Depends: libgz-sensors7-magnetometer, ${misc:Depends}
+Package: libignition-sensors8-magnetometer
+Depends: libgz-sensors8-magnetometer, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-navsat-dev
-Depends: libgz-sensors7-navsat-dev, ${misc:Depends}
+Package: libignition-sensors8-navsat-dev
+Depends: libgz-sensors8-navsat-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-navsat
-Depends: libgz-sensors7-navsat, ${misc:Depends}
+Package: libignition-sensors8-navsat
+Depends: libgz-sensors8-navsat, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-rendering-dev
-Depends: libgz-sensors7-rendering-dev, ${misc:Depends}
+Package: libignition-sensors8-rendering-dev
+Depends: libgz-sensors8-rendering-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-rendering
-Depends: libgz-sensors7-rendering, ${misc:Depends}
+Package: libignition-sensors8-rendering
+Depends: libgz-sensors8-rendering, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-rgbd-camera-dev
-Depends: libgz-sensors7-rgbd-camera-dev, ${misc:Depends}
+Package: libignition-sensors8-rgbd-camera-dev
+Depends: libgz-sensors8-rgbd-camera-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-rgbd-camera
-Depends: libgz-sensors7-rgbd-camera, ${misc:Depends}
+Package: libignition-sensors8-rgbd-camera
+Depends: libgz-sensors8-rgbd-camera, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-segmentation-camera-dev
-Depends: libgz-sensors7-segmentation-camera-dev, ${misc:Depends}
+Package: libignition-sensors8-segmentation-camera-dev
+Depends: libgz-sensors8-segmentation-camera-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-segmentation-camera
-Depends: libgz-sensors7-segmentation-camera, ${misc:Depends}
+Package: libignition-sensors8-segmentation-camera
+Depends: libgz-sensors8-segmentation-camera, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-thermal-camera-dev
-Depends: libgz-sensors7-thermal-camera-dev, ${misc:Depends}
+Package: libignition-sensors8-thermal-camera-dev
+Depends: libgz-sensors8-thermal-camera-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-thermal-camera
-Depends: libgz-sensors7-thermal-camera, ${misc:Depends}
+Package: libignition-sensors8-thermal-camera
+Depends: libgz-sensors8-thermal-camera, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-wide-angle-camera-dev
-Depends: libgz-sensors7-wide-angle-camera-dev, ${misc:Depends}
+Package: libignition-sensors8-wide-angle-camera-dev
+Depends: libgz-sensors8-wide-angle-camera-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-wide-angle-camera
-Depends: libgz-sensors7-wide-angle-camera, ${misc:Depends}
+Package: libignition-sensors8-wide-angle-camera
+Depends: libgz-sensors8-wide-angle-camera, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
-Package: libignition-sensors7-dev
-Depends: libgz-sensors7-dev, ${misc:Depends}
+Package: libignition-sensors8-dev
+Depends: libgz-sensors8-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
