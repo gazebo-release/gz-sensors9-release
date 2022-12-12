@@ -205,6 +205,35 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib depth-cam
  .
  Shared library for depth-camera sensor
 
+Package: libgz-sensors8-dvl-dev
+Architecture: any
+Section: libdevel
+Depends: libgz-cmake3-dev,
+         libgz-common5-events-dev,
+         libgz-math7-dev,
+         libgz-sensors8-core-dev (= ${binary:Version}),
+         libsdformat13-dev,
+         libgz-sensors8-dvl (= ${binary:Version}),
+         ${misc:Depends}
+Multi-Arch: same
+Description: Gazebo Sensors classes and functions for robot apps - Dev files DVL
+ Gazebo Sensors is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Development files for DVL sensor
+
+Package: libgz-sensors8-dvl
+Architecture: any
+Section: libs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: same
+Description: Gazebo Sensors classes and functions for robot apps - Lib DVL
+ Gazebo Sensors is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Shared library for DVL sensor
+
 Package: libgz-sensors8-force-torque-dev
 Architecture: any
 Section: libdevel
@@ -572,6 +601,7 @@ Depends: libgz-sensors8-core-dev (= ${binary:Version}),
          libgz-sensors8-boundingbox-camera-dev (= ${binary:Version}),
          libgz-sensors8-camera-dev (= ${binary:Version}),
          libgz-sensors8-depth-camera-dev (= ${binary:Version}),
+         libgz-sensors8-dvl-dev (= ${binary:Version}),
          libgz-sensors8-force-torque-dev (= ${binary:Version}),
          libgz-sensors8-imu-dev (= ${binary:Version}),
          libgz-sensors8-lidar-dev (= ${binary:Version}),

@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/dvl/*
+usr/include/*/sensors*/*/sensors/DopplerVelocityLog*.hh
+usr/lib/*/cmake/*-sensors[0-99]-dvl/*
+usr/lib/*/lib*-sensors[0-99]-dvl.so
+usr/lib/*/pkgconfig/*-sensors[0-99]-dvl.pc
