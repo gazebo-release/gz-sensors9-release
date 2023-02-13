@@ -83,6 +83,34 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib air-press
  .
  Shared library for air-pressure sensor
 
+Package: libgz-sensors8-air-speed-dev
+Architecture: any
+Section: libdevel
+Depends: libgz-cmake3-dev,
+         libgz-common5-events-dev,
+         libgz-sensors8-core-dev (= ${binary:Version}),
+         libsdformat13-dev,
+         libgz-sensors8-air-speed(= ${binary:Version}),
+         ${misc:Depends}
+Multi-Arch: same
+Description: Gazebo Sensors classes and functions for robot apps - Dev files air-speed
+ Gazebo Sensors is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Development files for air-speed sensor
+
+Package: libgz-sensors8-air-speed
+Architecture: any
+Section: libs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: same
+Description: Gazebo Sensors classes and functions for robot apps - Lib air-speed
+ Gazebo Sensors is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Shared library for air-speed sensor
+
 Package: libgz-sensors8-altimeter-dev
 Architecture: any
 Section: libdevel
@@ -597,6 +625,7 @@ Architecture: any
 Section: libdevel
 Depends: libgz-sensors8-core-dev (= ${binary:Version}),
          libgz-sensors8-air-pressure-dev (= ${binary:Version}),
+         libgz-sensors8-air-speed-dev (= ${binary:Version}),
          libgz-sensors8-altimeter-dev (= ${binary:Version}),
          libgz-sensors8-boundingbox-camera-dev (= ${binary:Version}),
          libgz-sensors8-camera-dev (= ${binary:Version}),
