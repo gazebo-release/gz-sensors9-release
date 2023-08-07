@@ -5,7 +5,7 @@ Priority: optional
 Build-Depends: cmake,
                doxygen,
                pkg-config,
-               debhelper (>= 11),
+               debhelper (>= 13),
                libgz-cmake3-dev,
                libgz-common5-events-dev,
                libgz-common5-io-dev,
@@ -16,7 +16,7 @@ Build-Depends: cmake,
                libgz-rendering8-ogre2-dev,
                libgz-transport13-core-dev,
                libgz-tools2-dev,
-               libsdformat13-dev
+               libsdformat14-dev
 Vcs-Browser: https://github.com/gazebosim/gz-sensors
 Vcs-Git: https://github.com/gazebo-release/gz-sensors8-release
 Standards-Version: 4.5.1
@@ -33,7 +33,7 @@ Depends: libgz-cmake3-dev,
          libgz-rendering8-ogre2-dev,
          libgz-transport13-core-dev,
          libgz-tools2-dev,
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -61,7 +61,7 @@ Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-air-pressure (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -89,7 +89,7 @@ Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-air-speed(= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -117,7 +117,7 @@ Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-altimeter (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -148,7 +148,7 @@ Depends: libgz-cmake3-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-boundingbox-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -179,7 +179,7 @@ Depends: libgz-cmake3-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -211,7 +211,7 @@ Depends: libgz-cmake3-dev,
          libgz-transport13-core-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
          libgz-sensors8-camera-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-depth-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -240,7 +240,7 @@ Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-dvl (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -269,7 +269,7 @@ Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-force-torque (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -298,7 +298,7 @@ Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-imu (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -329,7 +329,7 @@ Depends: libgz-cmake3-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-lidar (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -361,7 +361,7 @@ Depends: libgz-cmake3-dev,
          libgz-transport13-core-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
          libgz-sensors8-lidar-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-gpu-lidar (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -392,7 +392,7 @@ Depends: libgz-cmake3-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-logical-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -421,7 +421,7 @@ Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-magnetometer (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -450,7 +450,7 @@ Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-navsat (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -479,7 +479,7 @@ Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-rendering (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -507,7 +507,7 @@ Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-msgs10-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-rgbd-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -538,7 +538,7 @@ Depends: libgz-cmake3-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-segmentation-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -569,7 +569,7 @@ Depends: libgz-cmake3-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-thermal-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -597,7 +597,7 @@ Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-msgs10-dev,
          libgz-sensors8-core-dev (= ${binary:Version}),
-         libsdformat13-dev,
+         libsdformat14-dev,
          libgz-sensors8-wide-angle-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
