@@ -1,4 +1,4 @@
-Source: gz-sensors8
+Source: gz-sensors9
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
@@ -18,11 +18,11 @@ Build-Depends: cmake,
                libgz-tools2-dev,
                libsdformat14-dev
 Vcs-Browser: https://github.com/gazebosim/gz-sensors
-Vcs-Git: https://github.com/gazebo-release/gz-sensors8-release
+Vcs-Git: https://github.com/gazebo-release/gz-sensors9-release
 Standards-Version: 4.5.1
 Homepage: http://gazebosim.org/
 
-Package: libgz-sensors8-core-dev
+Package: libgz-sensors9-core-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -34,7 +34,7 @@ Depends: libgz-cmake3-dev,
          libgz-transport13-core-dev,
          libgz-tools2-dev,
          libsdformat14-dev,
-         libgz-sensors8 (= ${binary:Version}),
+         libgz-sensors9 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Development files
@@ -43,7 +43,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Development f
  .
  Core development files
 
-Package: libgz-sensors8
+Package: libgz-sensors9
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -55,14 +55,14 @@ Description: Gazebo Sensors classes and functions for robot apps - Shared librar
  .
  Main shared library
 
-Package: libgz-sensors8-air-pressure-dev
+Package: libgz-sensors9-air-pressure-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-air-pressure (= ${binary:Version}),
+         libgz-sensors9-air-pressure (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files air-pressure
@@ -71,7 +71,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files air
  .
  Development files for air-pressure sensor
 
-Package: libgz-sensors8-air-pressure
+Package: libgz-sensors9-air-pressure
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -83,14 +83,14 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib air-press
  .
  Shared library for air-pressure sensor
 
-Package: libgz-sensors8-air-speed-dev
+Package: libgz-sensors9-air-speed-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-air-speed(= ${binary:Version}),
+         libgz-sensors9-air-speed(= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files air-speed
@@ -99,7 +99,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files air
  .
  Development files for air-speed sensor
 
-Package: libgz-sensors8-air-speed
+Package: libgz-sensors9-air-speed
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -111,14 +111,14 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib air-speed
  .
  Shared library for air-speed sensor
 
-Package: libgz-sensors8-altimeter-dev
+Package: libgz-sensors9-altimeter-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-altimeter (= ${binary:Version}),
+         libgz-sensors9-altimeter (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files altimeter
@@ -127,7 +127,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files alt
  .
  Development files for altimeter sensor
 
-Package: libgz-sensors8-altimeter
+Package: libgz-sensors9-altimeter
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -139,7 +139,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib altimeter
  .
  Shared library for altimeter sensor
 
-Package: libgz-sensors8-boundingbox-camera-dev
+Package: libgz-sensors9-boundingbox-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -147,9 +147,9 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-boundingbox-camera (= ${binary:Version}),
+         libgz-sensors9-boundingbox-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files Bounding Box Camera
@@ -158,7 +158,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files Bou
  .
  Development files for Bounding Box Camera sensor
 
-Package: libgz-sensors8-boundingbox-camera
+Package: libgz-sensors9-boundingbox-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -170,7 +170,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib Bounding 
  .
  Shared library for Bounding Box Camera sensor
 
-Package: libgz-sensors8-camera-dev
+Package: libgz-sensors9-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -178,9 +178,9 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-camera (= ${binary:Version}),
+         libgz-sensors9-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files Camera
@@ -189,7 +189,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files Cam
  .
  Development files for Camera sensor
 
-Package: libgz-sensors8-camera
+Package: libgz-sensors9-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -201,7 +201,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib Camera
  .
  Shared library for Camera sensor
 
-Package: libgz-sensors8-depth-camera-dev
+Package: libgz-sensors9-depth-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -209,10 +209,10 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
-         libgz-sensors8-camera-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
+         libgz-sensors9-camera-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-depth-camera (= ${binary:Version}),
+         libgz-sensors9-depth-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files depth-camera
@@ -221,7 +221,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files dep
  .
  Development files for depth-camera sensor
 
-Package: libgz-sensors8-depth-camera
+Package: libgz-sensors9-depth-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -233,15 +233,15 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib depth-cam
  .
  Shared library for depth-camera sensor
 
-Package: libgz-sensors8-dvl-dev
+Package: libgz-sensors9-dvl-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-dvl (= ${binary:Version}),
+         libgz-sensors9-dvl (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files DVL
@@ -250,7 +250,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files DVL
  .
  Development files for DVL sensor
 
-Package: libgz-sensors8-dvl
+Package: libgz-sensors9-dvl
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -262,15 +262,15 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib DVL
  .
  Shared library for DVL sensor
 
-Package: libgz-sensors8-force-torque-dev
+Package: libgz-sensors9-force-torque-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-force-torque (= ${binary:Version}),
+         libgz-sensors9-force-torque (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files force-torque
@@ -279,7 +279,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files for
  .
  Development files for force-torque sensor
 
-Package: libgz-sensors8-force-torque
+Package: libgz-sensors9-force-torque
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -291,15 +291,15 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib force-tor
  .
  Shared library for force-torque sensor
 
-Package: libgz-sensors8-imu-dev
+Package: libgz-sensors9-imu-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-imu (= ${binary:Version}),
+         libgz-sensors9-imu (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files imu
@@ -308,7 +308,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files imu
  .
  Development files for imu sensor
 
-Package: libgz-sensors8-imu
+Package: libgz-sensors9-imu
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -320,7 +320,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib imu
  .
  Shared library for imu sensor
 
-Package: libgz-sensors8-lidar-dev
+Package: libgz-sensors9-lidar-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -328,9 +328,9 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-lidar (= ${binary:Version}),
+         libgz-sensors9-lidar (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files lidar
@@ -339,7 +339,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files lid
  .
  Development files for lidar sensor
 
-Package: libgz-sensors8-lidar
+Package: libgz-sensors9-lidar
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -351,7 +351,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib lidar
  .
  Shared library for lidar sensor
 
-Package: libgz-sensors8-gpu-lidar-dev
+Package: libgz-sensors9-gpu-lidar-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -359,10 +359,10 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
-         libgz-sensors8-lidar-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
+         libgz-sensors9-lidar-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-gpu-lidar (= ${binary:Version}),
+         libgz-sensors9-gpu-lidar (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files gpu-lidar
@@ -371,7 +371,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files gpu
  .
  Development files for gpu-lidar sensor
 
-Package: libgz-sensors8-gpu-lidar
+Package: libgz-sensors9-gpu-lidar
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -383,7 +383,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib gpu-lidar
  .
  Shared library for gpu-lidar sensor
 
-Package: libgz-sensors8-logical-camera-dev
+Package: libgz-sensors9-logical-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -391,9 +391,9 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-logical-camera (= ${binary:Version}),
+         libgz-sensors9-logical-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files logical-camera
@@ -402,7 +402,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files log
  .
  Development files for logical-camera sensor
 
-Package: libgz-sensors8-logical-camera
+Package: libgz-sensors9-logical-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -414,15 +414,15 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib logical-c
  .
  Shared library for logical-camera sensor
 
-Package: libgz-sensors8-magnetometer-dev
+Package: libgz-sensors9-magnetometer-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-magnetometer (= ${binary:Version}),
+         libgz-sensors9-magnetometer (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files magnetometer
@@ -431,7 +431,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files mag
  .
  Development files for magnetometer sensor
 
-Package: libgz-sensors8-magnetometer
+Package: libgz-sensors9-magnetometer
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -443,15 +443,15 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib magnetome
  .
  Shared library for magnetometer sensor
 
-Package: libgz-sensors8-navsat-dev
+Package: libgz-sensors9-navsat-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-navsat (= ${binary:Version}),
+         libgz-sensors9-navsat (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files navsat
@@ -460,7 +460,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files nav
  .
  Development files for NavSat (GPS) sensor
 
-Package: libgz-sensors8-navsat
+Package: libgz-sensors9-navsat
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -472,15 +472,15 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib navsat
  .
  Shared library for NavSat (GPS) sensor
 
-Package: libgz-sensors8-rendering-dev
+Package: libgz-sensors9-rendering-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-common5-events-dev,
          libgz-math7-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-rendering (= ${binary:Version}),
+         libgz-sensors9-rendering (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files rendering
@@ -489,7 +489,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files ren
  .
  Development files for rendering sensor
 
-Package: libgz-sensors8-rendering
+Package: libgz-sensors9-rendering
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -501,14 +501,14 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib rendering
  .
  Shared library for rendering sensor
 
-Package: libgz-sensors8-rgbd-camera-dev
+Package: libgz-sensors9-rgbd-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-msgs10-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-rgbd-camera (= ${binary:Version}),
+         libgz-sensors9-rgbd-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files rgbd-camera
@@ -517,7 +517,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files rgb
  .
  Development files for rgbd-camera sensor
 
-Package: libgz-sensors8-rgbd-camera
+Package: libgz-sensors9-rgbd-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -529,7 +529,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib rgbd-came
  .
  Shared library for rgbd-camera sensor
 
-Package: libgz-sensors8-segmentation-camera-dev
+Package: libgz-sensors9-segmentation-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -537,9 +537,9 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-segmentation-camera (= ${binary:Version}),
+         libgz-sensors9-segmentation-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files segmentation-camera
@@ -548,7 +548,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files seg
  .
  Development files for segmentation-camera sensor
 
-Package: libgz-sensors8-segmentation-camera
+Package: libgz-sensors9-segmentation-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -560,7 +560,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib segmentat
  .
  Shared library for segmentation-camera sensor
 
-Package: libgz-sensors8-thermal-camera-dev
+Package: libgz-sensors9-thermal-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
@@ -568,9 +568,9 @@ Depends: libgz-cmake3-dev,
          libgz-math7-dev,
          libgz-msgs10-dev,
          libgz-transport13-core-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-thermal-camera (= ${binary:Version}),
+         libgz-sensors9-thermal-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files thermal-camera
@@ -579,7 +579,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files the
  .
  Development files for thermal-camera sensor
 
-Package: libgz-sensors8-thermal-camera
+Package: libgz-sensors9-thermal-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -591,14 +591,14 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib thermal-c
  .
  Shared library for thermal-camera sensor
 
-Package: libgz-sensors8-wide-angle-camera-dev
+Package: libgz-sensors9-wide-angle-camera-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake3-dev,
          libgz-msgs10-dev,
-         libgz-sensors8-core-dev (= ${binary:Version}),
+         libgz-sensors9-core-dev (= ${binary:Version}),
          libsdformat14-dev,
-         libgz-sensors8-wide-angle-camera (= ${binary:Version}),
+         libgz-sensors9-wide-angle-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Dev files wide-angle-camera
@@ -607,7 +607,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Dev files wid
  .
  Development files for wide-angle-camera sensor
 
-Package: libgz-sensors8-wide-angle-camera
+Package: libgz-sensors9-wide-angle-camera
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -620,29 +620,29 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib wide-angl
  Shared library for wide-angle-camera sensor
 
 
-Package: libgz-sensors8-dev
+Package: libgz-sensors9-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-sensors8-core-dev (= ${binary:Version}),
-         libgz-sensors8-air-pressure-dev (= ${binary:Version}),
-         libgz-sensors8-air-speed-dev (= ${binary:Version}),
-         libgz-sensors8-altimeter-dev (= ${binary:Version}),
-         libgz-sensors8-boundingbox-camera-dev (= ${binary:Version}),
-         libgz-sensors8-camera-dev (= ${binary:Version}),
-         libgz-sensors8-depth-camera-dev (= ${binary:Version}),
-         libgz-sensors8-dvl-dev (= ${binary:Version}),
-         libgz-sensors8-force-torque-dev (= ${binary:Version}),
-         libgz-sensors8-imu-dev (= ${binary:Version}),
-         libgz-sensors8-lidar-dev (= ${binary:Version}),
-         libgz-sensors8-gpu-lidar-dev (= ${binary:Version}),
-         libgz-sensors8-logical-camera-dev (= ${binary:Version}),
-         libgz-sensors8-magnetometer-dev (= ${binary:Version}),
-         libgz-sensors8-navsat-dev (= ${binary:Version}),
-         libgz-sensors8-rendering-dev (= ${binary:Version}),
-         libgz-sensors8-rgbd-camera-dev (= ${binary:Version}),
-         libgz-sensors8-segmentation-camera-dev (= ${binary:Version}),
-         libgz-sensors8-thermal-camera-dev (= ${binary:Version}),
-         libgz-sensors8-wide-angle-camera-dev (= ${binary:Version}),
+Depends: libgz-sensors9-core-dev (= ${binary:Version}),
+         libgz-sensors9-air-pressure-dev (= ${binary:Version}),
+         libgz-sensors9-air-speed-dev (= ${binary:Version}),
+         libgz-sensors9-altimeter-dev (= ${binary:Version}),
+         libgz-sensors9-boundingbox-camera-dev (= ${binary:Version}),
+         libgz-sensors9-camera-dev (= ${binary:Version}),
+         libgz-sensors9-depth-camera-dev (= ${binary:Version}),
+         libgz-sensors9-dvl-dev (= ${binary:Version}),
+         libgz-sensors9-force-torque-dev (= ${binary:Version}),
+         libgz-sensors9-imu-dev (= ${binary:Version}),
+         libgz-sensors9-lidar-dev (= ${binary:Version}),
+         libgz-sensors9-gpu-lidar-dev (= ${binary:Version}),
+         libgz-sensors9-logical-camera-dev (= ${binary:Version}),
+         libgz-sensors9-magnetometer-dev (= ${binary:Version}),
+         libgz-sensors9-navsat-dev (= ${binary:Version}),
+         libgz-sensors9-rendering-dev (= ${binary:Version}),
+         libgz-sensors9-rgbd-camera-dev (= ${binary:Version}),
+         libgz-sensors9-segmentation-camera-dev (= ${binary:Version}),
+         libgz-sensors9-thermal-camera-dev (= ${binary:Version}),
+         libgz-sensors9-wide-angle-camera-dev (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Sensors classes and functions for robot apps - Metapackage
