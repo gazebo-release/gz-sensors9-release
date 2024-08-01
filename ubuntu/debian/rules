@@ -30,8 +30,8 @@ override_dh_install:
 	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/SegmentationCamera*.hh
 	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/ThermalCamera*.hh
 	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/WideAngleCamera*.hh
-	install -d debian/tmp/usr/share/gz/gz-plugin3/
-	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-plugin3/
+	install -d debian/tmp/usr/share/gz/gz-sensors9/
+	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-sensors9/
 
 override_dh_auto_test:
 	true
