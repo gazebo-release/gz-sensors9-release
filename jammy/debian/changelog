@@ -1,3 +1,9 @@
+gz-sensors9 (9.0.0-1~jammy) jammy; urgency=medium
+
+  * gz-sensors9 9.0.0-1 release
+
+ -- Ian Chen <ichen@openrobotics.org>  Thu, 26 Sep 2024 23:16:58 +0000
+
 gz-sensors9 (9.0.0~pre2-1~jammy) jammy; urgency=medium
 
   * gz-sensors9 9.0.0~pre2-1 release
